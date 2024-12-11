@@ -1,22 +1,12 @@
-@font-face {
-  font-family: "fa-solid";
-  src: url("fonts/fa-solid-900.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "themify";
-  src: url("fonts/themify.woff") format("woff");
-}
-
-@font-face {
-  font-family: "slick";
-  src: url("fonts/slick.woff") format("woff");
-}
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "slick", "themify", "fa-solid", sans-serif;
+}
+
+body{
+  font-family: "jost", sans-serif;
 }
 
 .container {
@@ -95,11 +85,11 @@
 
 .shadow-overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   background: rgba(39, 38, 38, 0.61);
   width: 100%;
-  height: 300rem;
+  height: 100vh;
 }
 
 .show-shadow {
@@ -127,15 +117,15 @@
 .sidebar a {
   display: block;
   padding: 10px 20px;
-  border-bottom: 1px solid #3c485256;
+  border-bottom: 1px solid #3c485236;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
   color: rgb(63, 63, 63);
   transition: 0.3s ease;
 }
 
 .sidebar a:hover {
-  background-color: #706e6e;
+  background-color: #0bb571;
   color: #fff;
 }
 
@@ -438,14 +428,14 @@ li {
 
 .feature-type {
   font-size: 17px;
-  font-weight: lighter;
+  font-weight: 500;
   color: #1a2438;
   margin: 0px 0px 5px;
 }
 
 .feature-description {
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 23px;
   color: #3c4852;
 }
@@ -1289,12 +1279,12 @@ li {
   .container {
     padding: 32px 70px;
   }
-  .features-section{
+  .features-section {
     flex-direction: column;
     margin-top: -3rem;
   }
   .feature-type {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .feature-description {
