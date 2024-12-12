@@ -199,10 +199,11 @@ body{
   align-items: center;
 }
 
-.logo {
-  object-fit: cover;
-  height: 36px;
-  width: 150px;
+.logo-text{
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1d8e5f;
 }
 
 .navbar {
@@ -1426,6 +1427,10 @@ li {
 @media (max-width: 760px) {
   .card {
     flex: 1 1 calc(100% - 30px);
+  }
+
+  .logo-text{
+    font-size: 25px;
   }
 
   .container {
